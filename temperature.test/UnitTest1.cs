@@ -11,7 +11,6 @@ namespace temperature.test {
         public void ConvertFahrenheitToCelsiusSuccess (double input, double expectedResult) {
             var cal = new TempCalculator ();
             var x = cal.ConvertFahrenheitToCelsius (input);
-
             x.Should ().Be (expectedResult);
         }
 
